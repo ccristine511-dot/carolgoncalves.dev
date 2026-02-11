@@ -1,0 +1,141 @@
+:root{
+  --bg:#0b0d12;
+  --card:#111522cc;
+  --stroke:#2a2f3a;
+  --text:#e9edf5;
+  --muted:#a9b2c3;
+  --grad: linear-gradient(90deg,#7c3aed,#06b6d4,#22c55e);
+  --shadow: 0 20px 60px rgba(0,0,0,.45);
+  --radius: 18px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--text);
+  background:var(--bg);
+}
+
+.bg{
+  position:fixed; inset:0; z-index:-1;
+  background:
+    radial-gradient(900px 500px at 10% 10%, rgba(124,58,237,.25), transparent 60%),
+    radial-gradient(800px 450px at 90% 20%, rgba(6,182,212,.20), transparent 60%),
+    linear-gradient(180deg, #070812, #0b0d12 40%, #070812);
+}
+
+.container{max-width:1080px; margin:0 auto; padding:0 20px}
+
+.header{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:22px 0;
+}
+
+.logo{
+  text-decoration:none;
+  color:var(--text);
+  font-weight:700;
+}
+
+.nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:var(--muted);
+}
+
+.nav a:hover{color:var(--text)}
+
+.hero{
+  padding:80px 0;
+}
+
+h1{
+  font-size:42px;
+  margin-bottom:20px;
+}
+
+.grad{
+  background: var(--grad);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.section{
+  padding:60px 0;
+}
+
+.grid{
+  display:grid;
+  gap:20px;
+}
+
+.grid.two{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid.three{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+  background:var(--card);
+  padding:20px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+
+.chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.chip{
+  background:#1e2430;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:14px;
+}
+
+.project-links{
+  margin-top:10px;
+}
+
+.link{
+  text-decoration:none;
+  color:white;
+  font-weight:bold;
+}
+
+.btn{
+  display:inline-block;
+  padding:10px 16px;
+  background:white;
+  color:black;
+  border-radius:20px;
+  text-decoration:none;
+  margin-right:10px;
+}
+
+.btn.ghost{
+  background:transparent;
+  border:1px solid white;
+  color:white;
+}
+
+.footer{
+  padding:40px 0;
+  display:flex;
+  justify-content:space-between;
+  color:var(--muted);
+}
+
+@media (max-width:900px){
+  .grid.two,
+  .grid.three{
+    grid-template-columns:1fr;
+  }
+}
