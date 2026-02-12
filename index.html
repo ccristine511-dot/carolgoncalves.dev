@@ -170,7 +170,73 @@
     </article>
   </div>
 </section>
+<section id="orcamento" class="section">
+  <div class="section-head">
+    <h2>Orçamento</h2>
+    <p>Selecione o tipo de projeto e os adicionais para estimar o valor.</p>
+  </div>
 
+  <div class="grid two">
+    <div class="card">
+      <h3>Tipo de projeto</h3>
+
+      <label style="display:block;margin-top:10px;font-weight:700;">Projeto</label>
+      <select id="tipoProjeto">
+        <option value="450">Landing Page — R$ 450</option>
+        <option value="850">Site Institucional — R$ 850</option>
+        <option value="1100">Dashboard Front-End — R$ 1100</option>
+      </select>
+
+      <h3 style="margin-top:18px;">Adicionais</h3>
+
+      <label style="display:block;margin-top:10px;">
+        <input type="checkbox" class="extra" value="150"> Responsividade avançada (+150)
+      </label>
+      <label style="display:block;margin-top:10px;">
+        <input type="checkbox" class="extra" value="200"> Animações (+200)
+      </label>
+      <label style="display:block;margin-top:10px;">
+        <input type="checkbox" class="extra" value="180"> SEO básico (+180)
+      </label>
+      <label style="display:block;margin-top:10px;">
+        <input type="checkbox" class="extra" value="100"> Botão/Integração WhatsApp (+100)
+      </label>
+      <label style="display:block;margin-top:10px;">
+        <input type="checkbox" class="extra" value="120"> Deploy e publicação (+120)
+      </label>
+
+      <p style="font-size:14px;margin-top:14px;color:var(--muted);">
+        Valores promocionais para novos projetos. Ajustes podem variar conforme complexidade.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Resumo</h3>
+
+      <div style="margin-top:10px;display:flex;justify-content:space-between;gap:12px;">
+        <span style="color:var(--muted);">Total estimado</span>
+        <strong>R$ <span id="totalOrcamento">0.00</span></strong>
+      </div>
+
+      <div style="margin-top:12px;display:flex;justify-content:space-between;gap:12px;">
+        <span style="color:var(--muted);">Manutenção básica</span>
+        <strong>R$ 150</strong>
+      </div>
+
+      <p style="margin-top:14px;color:var(--muted);line-height:1.6;">
+        Envie o orçamento no WhatsApp com as opções selecionadas.
+      </p>
+
+      <a class="btn" id="btnWhatsOrcamento" href="#" target="_blank" rel="noreferrer" style="margin-top:10px;">
+        Enviar orçamento no WhatsApp
+      </a>
+
+      <a class="btn ghost" href="#contato" style="margin-top:10px;">
+        Preferir contato direto
+      </a>
+    </div>
+  </div>
+</section>
     <!-- CONTATO -->
     <section id="contato" class="section">
       <div class="section-head">
