@@ -1,30 +1,33 @@
-# Carol Gonçalves — Portfólio
+# Portfolio
 
-Portfólio profissional desenvolvido com foco em performance, responsividade e arquitetura organizada.
+Aplicação web para demonstração de projetos organizados por categoria técnica.
+
+## Áreas Demonstradas
+
+### Desenvolvimento Web
+- Sistemas de gestão comercial
+- Aplicações com lógica de negócio
+- Interfaces responsivas
+
+### Banco de Dados
+- Modelagem lógica e física
+- Estrutura relacional
+- Utilização de MySQL
+
+### Programação
+- Programação Orientada a Objetos
+- Estruturação modular de código
+- Lógica computacional aplicada
 
 ## Tecnologias
 
 - HTML5
 - CSS3
 - JavaScript
-- Git
-- GitHub
+- MySQL
+- Conceitos de POO
+- Git e GitHub
 
-## Projetos
+## Deploy
 
-### Sistema Web Full Stack
-Aplicação com integração entre front-end e back-end, autenticação de usuários e comunicação com banco de dados via API.
-
-### Sistema de Gestão Comercial
-Sistema desenvolvido para controle de vendas, estoque e cadastro de clientes.
-
-### Site Institucional Comercial
-Website responsivo com foco em presença digital e conversão.
-
-## Contato
-
-Email: ccristine511@gmail.com 
-
-Contato:(41)9 9802-6807
-
-GitHub: https://github.com/ccristine511-dot
+Publicado via GitHub Pages.
