@@ -170,10 +170,39 @@
     </article>
   </div>
 </section>
+
+   </section>
+    
 <section id="orcamento" class="section">
   <div class="section-head">
     <h2>Orçamento</h2>
     <p>Selecione o tipo de projeto e os adicionais para estimar o valor.</p>
+  </div>
+
+  <div class="grid three" style="margin-bottom:16px;">
+    <div class="card">
+      <div class="project-top">
+        <h3>Basic</h3>
+        <span class="pill">R$ 450</span>
+      </div>
+      <p>Landing page com layout moderno, responsivo e CTA.</p>
+    </div>
+
+    <div class="card">
+      <div class="project-top">
+        <h3>Standard</h3>
+        <span class="pill">R$ 850</span>
+      </div>
+      <p>Site institucional com múltiplas seções e foco em conversão.</p>
+    </div>
+
+    <div class="card">
+      <div class="project-top">
+        <h3>Premium</h3>
+        <span class="pill">R$ 1100</span>
+      </div>
+      <p>Dashboard front-end com componentes e visual mais estruturado.</p>
+    </div>
   </div>
 
   <div class="grid two">
@@ -204,6 +233,12 @@
       <label style="display:block;margin-top:10px;">
         <input type="checkbox" class="extra" value="120"> Deploy e publicação (+120)
       </label>
+
+      <label style="display:block;margin-top:16px;font-weight:700;">Prazo</label>
+      <select id="prazoProjeto">
+        <option value="0">Normal</option>
+        <option value="150">Urgente (+150)</option>
+      </select>
 
       <p style="font-size:14px;margin-top:14px;color:var(--muted);">
         Valores promocionais para novos projetos. Ajustes podem variar conforme complexidade.
@@ -237,6 +272,7 @@
     </div>
   </div>
 </section>
+    
     <!-- CONTATO -->
     <section id="contato" class="section">
       <div class="section-head">
