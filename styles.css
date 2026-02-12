@@ -139,3 +139,21 @@ h1{
     grid-template-columns:1fr;
   }
 }
+.section h3{
+  letter-spacing: -0.01em;
+}
+
+.section h3[style]{
+  padding-top: 12px;
+  border-top: 1px solid rgba(42,47,58,.6);
+}
+
+.card{
+  transition: transform .15s ease, border-color .15s ease;
+}
+
+.card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(233,237,245,.22);
+  }
+}
