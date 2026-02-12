@@ -1,21 +1,25 @@
-document.getElementById("year").textContent = new Date().getFullYear();
-
 // Ano automático no rodapé
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // ===== Orçamento + WhatsApp =====
 const tipoProjeto = document.getElementById("tipoProjeto");
+const prazoProjeto = document.getElementById("prazoProjeto");
 const extras = document.querySelectorAll(".extra");
 const totalSpan = document.getElementById("totalOrcamento");
 const btnWhats = document.getElementById("btnWhatsOrcamento");
 
-// Seu WhatsApp (já correto)
+// Meu WhatsApp
 const WHATS_NUMBER = "5541998026807";
 
 function getProjetoLabel() {
   if (!tipoProjeto) return "";
   return tipoProjeto.options[tipoProjeto.selectedIndex].text;
+}
+
+function getPrazoLabel() {
+  if (!prazoProjeto) return "Normal";
+  return prazoProjeto.options[prazoProjeto.selectedIndex].text;
 }
 
 function getExtrasSelecionados() {
@@ -38,17 +42,26 @@ function calcularTotal() {
     if (extra.checked) total += parseFloat(extra.value || "0");
   });
 
+  if (prazoProjeto) {
+    total += parseFloat(prazoProjeto.value || "0");
+  }
+
   totalSpan.textContent = total.toFixed(2);
 
   // Monta mensagem do WhatsApp
   if (btnWhats) {
     const projeto = getProjetoLabel();
+    const prazo = getPrazoLabel();
     const extrasSel = getExtrasSelecionados();
-    const extrasTxt = extrasSel.length ? `Adicionais:\n- ${extrasSel.join("\n- ")}` : "Adicionais: nenhum";
+    const extrasTxt = extrasSel.length
+      ? `Adicionais:\n- ${extrasSel.join("\n- ")}`
+      : "Adicionais: nenhum";
+
     const msg =
 `Olá, Carol! Quero um orçamento.
 
 Projeto: ${projeto}
+Prazo: ${prazo}
 ${extrasTxt}
 
 Total estimado: R$ ${total.toFixed(2)}
@@ -62,6 +75,7 @@ Pode me passar o prazo e próximos passos?`;
 }
 
 if (tipoProjeto) tipoProjeto.addEventListener("change", calcularTotal);
+if (prazoProjeto) prazoProjeto.addEventListener("change", calcularTotal);
 extras.forEach((extra) => extra.addEventListener("change", calcularTotal));
-calcularTotal();
 
+calcularTotal();
