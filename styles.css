@@ -157,3 +157,60 @@ h1{
   border-color: rgba(233,237,245,.22);
   }
 }
+/* Logo: mantém seu layout original */
+.logo-mark{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+}
+
+/* Fallback (gradiente) */
+.logo-fallback{
+  font-weight: 950;
+  letter-spacing: -0.04em;
+  font-size: 22px;              /* igual ao tamanho do seu logo */
+  line-height: 1;
+  display:none;                 /* fica escondido quando o vídeo funciona */
+}
+
+/* SVG do vídeo */
+.logo-video{
+  width: 220px;                 /* ajuste fino aqui */
+  height: 34px;
+  display:block;
+}
+
+/* Texto dentro do SVG (mesma “pegada” do hero) */
+.logo-video-text{
+  font-family: inherit;
+  font-weight: 950;
+  letter-spacing: -0.04em;
+  font-size: 64px;
+}
+
+/* Vídeo que preenche as letras */
+.logo-video-bg{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+/* Contorno sutil (opcional) */
+.logo-video-stroke{
+  font-family: inherit;
+  font-weight: 950;
+  letter-spacing: -0.04em;
+  font-size: 64px;
+  fill: transparent;
+  stroke: rgba(233,237,245,.22);
+  stroke-width: 2px;
+}
+
+/* Se a pessoa preferir menos animação, usa fallback */
+@media (prefers-reduced-motion: reduce){
+  .logo-video{ display:none; }
+  .logo-fallback{ display:inline-block; }
+}
+
+/* Caso o vídeo falhe de carregar, o fallback aparece via JS (abaixo) */
