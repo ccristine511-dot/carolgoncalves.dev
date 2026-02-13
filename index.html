@@ -11,22 +11,30 @@
   <div class="bg"></div>
 
   <header class="container header">
-  <a class="logo logo-video" href="#top" id="top" aria-label="Início">
+ <a class="logo logo-mark" href="#top" id="top" aria-label="Início">
   <span class="dot"></span>
 
-  <span class="name-video">
-    <video
-      class="name-bg"
-      autoplay
-      muted
-      loop
-      playsinline
-      preload="metadata">
-      <source src="assets/intro.mp4" type="video/mp4" />
-    </video>
+  <!-- Fallback (caso vídeo não carregue / reduzir movimento) -->
+  <span class="logo-fallback grad">Carol.Dev</span>
 
-    <span class="name-text">Carol Dev</span>
-  </span>
+  <!-- Vídeo dentro do texto (estilo BEYOND) -->
+  <svg class="logo-video" viewBox="0 0 520 90" role="img" aria-label="Carol.Dev">
+    <defs>
+      <mask id="textMask">
+        <rect width="520" height="90" fill="black"></rect>
+        <text x="0" y="70" class="logo-video-text" fill="white">Carol.Dev</text>
+      </mask>
+    </defs>
+
+    <foreignObject x="0" y="0" width="520" height="90" mask="url(#textMask)">
+      <video class="logo-video-bg" autoplay muted loop playsinline preload="metadata">
+        <source src="assets/logo.mp4" type="video/mp4" />
+      </video>
+    </foreignObject>
+
+    <!-- contorno sutil (opcional, ajuda a “definir” o texto) -->
+    <text x="0" y="70" class="logo-video-stroke">Carol.Dev</text>
+  </svg>
 </a>
 
     <nav class="nav">
