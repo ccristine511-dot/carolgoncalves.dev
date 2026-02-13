@@ -79,3 +79,19 @@ if (prazoProjeto) prazoProjeto.addEventListener("change", calcularTotal);
 extras.forEach((extra) => extra.addEventListener("change", calcularTotal));
 
 calcularTotal();
+const logoVid = document.querySelector(".logo-video-bg");
+const logoSvg = document.querySelector(".logo-video");
+const logoFallback = document.querySelector(".logo-fallback");
+
+if (logoVid && logoSvg && logoFallback) {
+  const showFallback = () => {
+    logoSvg.style.display = "none";
+    logoFallback.style.display = "inline-block";
+  };
+
+  logoVid.addEventListener("error", showFallback);
+  // Se demorar muito pra carregar, cai no fallback
+  setTimeout(() => {
+    if (logoVid.readyState < 2) showFallback();
+  }, 2500);
+}
