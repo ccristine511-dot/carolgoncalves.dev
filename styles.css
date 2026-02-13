@@ -252,4 +252,15 @@ h1{
   stroke: rgba(233,237,245,.25);
   stroke-width: 3px;
 }
+@media(max-width:768px){
+  .logo-text-mask,
+  .logo-stroke{
+    font-size: 90px;
+  }
+
+  .logo-hero{
+    height:130px;
+  }
+}
+
 
