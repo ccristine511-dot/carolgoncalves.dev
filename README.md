@@ -1,33 +1,35 @@
-# Portfolio
+# 💻 Portfólio - Caroline Gonçalves
 
-Aplicação web para demonstração de projetos organizados por categoria técnica.
+Aplicação web desenvolvida para apresentar projetos e soluções em desenvolvimento web.
 
-## Áreas Demonstradas
+## 🚀 Sobre
 
-### Desenvolvimento Web
-- Sistemas de gestão comercial
-- Aplicações com lógica de negócio
-- Interfaces responsivas
+Desenvolvedora web focada em criação de sites modernos, sistemas e aplicações funcionais para pequenos negócios.
 
-### Banco de Dados
-- Modelagem lógica e física
-- Estrutura relacional
-- Utilização de MySQL
+## 🛠 Tecnologias utilizadas
 
-### Programação
-- Programação Orientada a Objetos
-- Estruturação modular de código
-- Lógica computacional aplicada
-
-## Tecnologias
-
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
-- MySQL
-- Conceitos de POO
-- Git e GitHub
 
-## Deploy
+## 📂 Projetos
 
-Publicado via GitHub Pages.
+### 🔹 Meu Recibo
+Sistema completo para controle de vendas, estoque e geração de recibos.
+
+### 🔹 TechLife
+Website com formulário e integração com banco de dados (MySQL + PHP).
+
+### 🔹 Creator.tools
+Plataforma web para criadores de conteúdo com ferramentas como geração de nicknames, bios e histórias.
+
+## 📱 Diferenciais
+
+- Aplicações funcionais
+- Interface responsiva
+- Foco em usabilidade
+- Sistemas voltados para uso real
+
+---
+
+✨ Desenvolvido por Caroline Gonçalves
