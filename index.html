@@ -105,13 +105,6 @@
       </div>
     </section>
 
-    <!-- PROJETOS -->
-   <section id="projetos" class="section">
-  <div class="section-head">
-    <h2>Projetos</h2>
-    <p>Organizados por categoria técnica e aplicação prática.</p>
-  </div>
-
   <!-- SISTEMAS WEB -->
   <h3 style="margin-top:40px;">Sistemas Web</h3>
   <div class="grid three">
@@ -316,6 +309,60 @@
         </div>
       </div>
     </section>
+
+<!-- ===================== PROJETOS 3D ===================== -->
+<section id="projetos-3d">
+  <canvas id="portfolioGame"></canvas>
+
+  <div class="projects-info">
+    <p class="mini-title">Portfólio interativo</p>
+    <h2>Meus <span>Projetos</span></h2>
+    <p>
+      Clique em uma casa do tabuleiro para o robô se mover até o projeto.
+    </p>
+  </div>
+
+  <div class="hud-projeto">
+    <h3 id="nomeProjeto">Escolha um projeto</h3>
+    <p id="descProjeto">Clique em uma casa do tabuleiro.</p>
+    <a id="linkProjeto" href="#" target="_blank">Ver projeto</a>
+  </div>
+</section>
+
+
+<!-- ===================== PROJETOS LISTA ===================== -->
+<section id="projetos" class="section">
+  <div class="section-head">
+    <h2>Projetos</h2>
+    <p>Organizados por categoria técnica e aplicação prática.</p>
+  </div>
+
+  <div class="projetos-grid">
+
+    <div class="card-projeto">
+      <h3>Projeto 1</h3>
+      <p>Landing page moderna e responsiva.</p>
+      <a href="#">Ver projeto</a>
+    </div>
+
+    <div class="card-projeto">
+      <h3>Projeto 2</h3>
+      <p>Formulário com validação JavaScript.</p>
+      <a href="#">Ver projeto</a>
+    </div>
+
+    <div class="card-projeto">
+      <h3>Projeto 3</h3>
+      <p>Dashboard com gráficos e métricas.</p>
+      <a href="#">Ver projeto</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===================== SCRIPT 3D (OBRIGATÓRIO NO FINAL) ===================== -->
+<script type="module" src="game.js"></script>
 
     <footer class="footer">
       <span>© <span id="year"></span> Carol Gonçalves</span>
